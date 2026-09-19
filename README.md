@@ -108,13 +108,13 @@ langchain4j:
 Windows：
 
 ```powershell
-.\mvnw.cmd spring-boot:run
+mvn spring-boot:run
 ```
 
 macOS / Linux：
 
 ```bash
-./mvnw spring-boot:run
+mvn spring-boot:run
 ```
 
 默认服务地址为 `http://localhost:8101/api`，Knife4j 文档地址为：
@@ -127,13 +127,13 @@ http://localhost:8101/api/doc.html
 
 ```powershell
 # 编译
-.\mvnw.cmd -DskipTests compile
+mvn -DskipTests compile
 
 # 运行测试（需先启动 MySQL、Redis 等测试依赖）
-.\mvnw.cmd test
+mvn test
 
 # 打包
-.\mvnw.cmd clean package -DskipTests
+mvn clean package -DskipTests
 ```
 
 ## Docker 部署
